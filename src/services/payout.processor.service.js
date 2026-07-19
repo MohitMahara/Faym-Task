@@ -97,8 +97,6 @@ class PayoutProcessorService {
 
   async run() {
 
-    console.log("Run method got called");
-
     await this.processAdvancePayouts();
 
     await this.processApprovedSales();
