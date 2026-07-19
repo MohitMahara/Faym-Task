@@ -14,7 +14,8 @@ class SaleService {
     }
 
     async updateSaleStatus(saleId, status) {
-        const acceptedStatuses = ["pending", "rejected", "approved"];
+        const acceptedStatuses = ["PENDING", "REJECTED", "APPROVED"];
+        status = status.toUpperCase();
 
         if(!acceptedStatuses.includes(status)){
           throw new Error("Invalid status field");
