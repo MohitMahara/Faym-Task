@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.post("/", saleController.createSale);
 
-router.patch("/:saleId/status", saleController.updateSaleStatus);
+router.patch("/status/:saleId", saleController.updateSaleStatus);
 
 export default router;

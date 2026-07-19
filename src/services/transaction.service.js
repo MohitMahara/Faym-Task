@@ -14,6 +14,10 @@ class TransactionService {
     }
 
     async getUserTransactions(userId) {
+        
+        if(!userId){
+            throw new Error("User id is required");
+        }
 
         const user  = await User.findOneById(userId);
 

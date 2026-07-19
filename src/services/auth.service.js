@@ -14,7 +14,12 @@ class AuthService {
             userId: user._id
         });
 
-        return user;
+        const safeUser = {
+            name : user.name,
+            email : user.email
+        }
+
+        return safeUser;
     }
 
 }
