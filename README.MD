@@ -35,15 +35,15 @@ Failed withdrawals are automatically refunded back to the user's wallet.
 
 ## System Overview
 
-User
-│
-├── Wallet (Current Balance)
-│
-├── Sales
-│
-├── Transactions (Audit Trail)
-│
-└── Withdrawals
+The system consists of the following entities:
+
+| Entity | Responsibility |
+|----------|---------------|
+| User | Represents a creator on the platform |
+| Wallet | Stores current withdrawable balance |
+| Sale | Stores affiliate sale information |
+| Transaction | Maintains audit trail of balance changes |
+| Withdrawal | Stores creator payout requests |
 
 ---
 
